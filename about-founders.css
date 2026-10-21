@@ -1,0 +1,3 @@
+/* Founder photos, restored from the previous site. Same circle treatment as
+   the Thea avatar on Features; 88px matches the previous site's size. */
+.s-founder-photo{display:block;width:5.5rem;height:5.5rem;object-fit:cover;object-position:center top;border-radius:var(--pill);margin-block-end:var(--space-4)}

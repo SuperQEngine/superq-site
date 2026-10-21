@@ -1,0 +1,3 @@
+/* Production integration. Sign in became a link (it opened a prototype dialog);
+   a button centres its label, a link does not, so centre it the same way. */
+.nav-actions a.quiet{display:inline-flex;align-items:center}

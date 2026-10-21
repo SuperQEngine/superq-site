@@ -1,0 +1,79 @@
+/* Homepage composition. Shared palette and controls remain in the site theme. */
+.home-page{--home-hero:clamp(42rem,59vw,52rem);--home-coach:32rem;--home-tile:34rem;--home-art:16rem;--home-art-width:82%;--home-art-max:30rem;--home-title:clamp(2.25rem,4.4vw,4rem)}
+.home-page .opening-v31{min-height:var(--home-hero);background:var(--white);color:var(--ink);padding-block:var(--space-16);isolation:isolate}
+.home-page .opening-copy{padding:0 var(--gutter);max-width:64rem}
+.home-page .opening-copy h1{font-size:var(--home-title);line-height:1.06}
+.home-page .opening-copy>p{color:var(--muted-light)}
+.home-page .opening-copy .button{background:var(--ink);color:var(--white);border-color:var(--ink)}
+.home-page .opening-copy .button:hover{background:var(--line-dark)}
+.home-page .opening-copy :focus-visible{outline-color:var(--focus-light)}
+.home-page .opening-art{position:absolute;inset:auto auto calc(var(--space-16) * -1) 50%;transform:translateX(-50%);width:min(80vw,70rem);max-width:none;height:auto;object-fit:contain;z-index:0;mix-blend-mode:multiply;mask-image:none}
+.home-page .coach-feature{border-block:1px solid var(--line-dark)}
+.home-page #coach,.home-page #coach .slot-inner{min-height:var(--home-coach)}
+.home-page #coach .slot-inner{display:flex;flex-direction:row;align-items:center;padding:var(--space-16) var(--gutter);width:calc(100% - var(--gutter)*2);max-width:var(--content);margin:auto}
+.home-page #coach .slot-copy{width:44%;max-width:30rem;padding:0;z-index:2}
+.home-page #coach h2{font-size:var(--heading);line-height:1.06}
+.home-page #coach .slot-description{max-width:31ch;color:var(--muted-dark)}
+.home-page #coach .slot-visual{position:absolute!important;inset:0 0 0 auto;width:55%;height:100%;min-height:0!important;z-index:0}
+.home-page #coach .scene-art{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center;mix-blend-mode:lighten;mask-image:none}
+.home-page .slot-learn{display:inline-flex;align-items:center;justify-content:center;min-height:var(--touch);padding:var(--space-3) var(--space-6);margin-top:var(--space-6);border:1px solid var(--white);border-radius:var(--pill);background:var(--white);color:var(--ink);font-size:var(--small);line-height:1.2}
+.home-page .slot-learn:hover{background:var(--mist);border-color:var(--mist)}
+.home-page .slot-learn>span{display:none}
+.home-page .slot-light .slot-learn{background:var(--ink);border-color:var(--ink);color:var(--white)}
+.home-page .slot-light .slot-learn:hover{background:var(--line-dark);border-color:var(--line-dark)}
+.home-page .product-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-3);padding:var(--space-3);background:var(--white)}
+.home-page .product-grid .immersive-slot{min-height:var(--home-tile);isolation:isolate;background:var(--black)}
+.home-page .product-grid .slot-light{background:var(--paper);color:var(--ink)}
+.home-page .product-grid .slot-inner{display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:0;width:100%;max-width:none;min-height:var(--home-tile);padding:var(--space-12) var(--space-8) 0}
+.home-page .product-grid .slot-copy{position:relative;z-index:2;width:100%;max-width:32rem;margin:0;padding:0;text-align:center}
+.home-page .product-grid h2{font-size:clamp(2rem,2.8vw,2.5rem);line-height:1.06;margin:0 auto var(--space-3);max-width:none}
+.home-page .product-grid .slot-description{font-size:var(--lead);line-height:1.4;max-width:28ch;margin-inline:auto;color:inherit}
+.home-page .product-grid .slot-learn{margin-top:var(--space-5)}
+.home-page .product-grid .slot-visual,.home-page .product-grid #pairs .slot-visual{position:absolute!important;inset:auto auto var(--space-6) 50%;transform:translateX(-50%);width:var(--home-art-width);max-width:var(--home-art-max);height:var(--home-art);min-height:0!important;z-index:0;overflow:hidden;background:inherit}
+.home-page .product-grid .scene-art,.home-page .product-grid #pairs.immersive-slot .scene-art{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:contain;object-position:center;mask-image:none}
+.home-page .product-grid .slot-dark .scene-art{mix-blend-mode:lighten}
+.home-page .product-grid .slot-light .scene-art{mix-blend-mode:multiply}
+.home-page .nav-links [aria-current=page]{color:var(--white)}
+@media(max-width:47.999rem){
+.home-page{--home-hero:34rem;--home-coach:36rem;--home-tile:29rem;--home-art:14rem;--home-title:clamp(2rem,7.8vw,3rem)}
+.home-page .opening-v31{padding-block:var(--space-12)}
+.home-page .opening-copy>p{font-size:var(--body);max-width:24ch;margin-inline:auto}
+.home-page .opening-art{width:108vw;inset-block-end:calc(var(--space-8) * -1)}
+.home-page #coach .slot-inner{display:flex;flex-direction:column;align-items:stretch;width:100%;padding:var(--space-12) var(--gutter) 0}
+.home-page #coach .slot-copy{width:100%;max-width:32rem}
+.home-page #coach h2{font-size:clamp(2.25rem,7.8vw,3rem)}
+.home-page #coach .slot-description{max-width:32ch}
+.home-page #coach .slot-visual{position:relative!important;inset:auto;width:100%;height:17rem;flex:1;margin-top:var(--space-5)}
+.home-page #coach .scene-art{width:100%;height:100%}
+.home-page .product-grid{grid-template-columns:1fr;gap:var(--space-2);padding:var(--space-2)}
+.home-page .product-grid .slot-inner{padding:var(--space-10) var(--space-6) 0}
+.home-page .product-grid h2{font-size:2rem}
+}
+.home-page #coach .slot-visual,.home-page .product-grid .slot-dark .slot-visual{background:var(--black)}
+.home-page .product-grid .slot-light .slot-visual{background:var(--paper)}
+.home-page #coach .scene-art,.home-page .product-grid .scene-art{mask-image:linear-gradient(transparent,black 8%,black 88%,transparent),linear-gradient(90deg,transparent,black 8%,black 92%,transparent);mask-composite:intersect}
+.home-page .product-grid #pairs.immersive-slot .scene-art{mask-image:linear-gradient(transparent,black 12%,black 80%,transparent),linear-gradient(90deg,transparent,black 12%,black 88%,transparent);mask-composite:intersect}
+.home-page .opening-art{mask-image:linear-gradient(90deg,transparent,black 5%,black 95%,transparent)}
+/* Thea retains the established app identity, fully visible at a quieter scale. */
+.home-page #coach .scene-art{object-fit:cover;object-position:145% center}
+.home-page #coach .slot-visual{inset:var(--space-12) var(--space-6) var(--space-12) auto;width:46%;height:auto}
+.home-page .product-grid .slot-inner{gap:var(--space-6);padding-block-end:var(--space-6)}
+.home-page .product-grid .slot-visual,.home-page .product-grid #pairs .slot-visual{position:relative!important;inset:auto;transform:none;margin-top:auto;flex-shrink:0}
+@media(max-width:47.999rem){
+.home-page #coach .slot-visual{inset:auto;width:100%;height:16rem;min-height:16rem!important;flex:none}
+}
+.home-page .product-grid #pairs .slot-visual{background:var(--black)}
+.home-page .product-grid #practice .scene-art{mask-image:linear-gradient(transparent,black 22%,black 70%,transparent),linear-gradient(90deg,transparent,black 18%,black 82%,transparent);mask-composite:intersect}
+.home-page .product-grid .slot-description{min-height:2.8em}
+
+/* Restore the original immersive Thea scene. */
+.home-page #coach .slot-inner{width:100%;max-width:none;padding:var(--space-12) var(--scene-gutter)}
+.home-page #coach .slot-copy{width:37%;max-width:32rem}
+.home-page #coach .slot-visual{position:absolute!important;inset:0;width:100%;height:100%;min-height:0!important;z-index:0;margin:0}
+.home-page #coach .scene-art{inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%;mix-blend-mode:normal;mask-image:none}
+@media(max-width:47.999rem){
+.home-page #coach .slot-inner{padding:0;flex-direction:column;align-items:stretch}
+.home-page #coach .slot-copy{width:100%;max-width:none;padding:var(--space-10) var(--gutter) var(--space-4)}
+.home-page #coach .slot-visual{position:relative!important;inset:auto;width:100%;height:auto;min-height:12rem!important;flex:1}
+.home-page #coach .scene-art{inset:auto -45% 0 auto;width:210%;max-width:none;height:100%;object-fit:cover;object-position:76% 50%;mask-image:linear-gradient(transparent,black 12%)}
+}

@@ -1,0 +1,35 @@
+:root{
+  --black:#080809;
+  --graphite:#111113;
+  --raised:#1c1b1f;
+  --white:#fafafa;
+  --paper:#f5f5f7;
+  --ink:#1d1d20;
+  --muted-dark:#a5a3ac;
+  --muted-light:#66636d;
+  --line-dark:#353338;
+  --line-light:#d8d5dd;
+  --plum-dark:#cbb2db;
+  --plum-light:#735181;
+  --rose:#d7abc6;
+  --mist:#ece8f0;
+  --focus-dark:#e1c9ed;
+  --focus-light:#70497f;
+  --quiet-plum:#211a26;
+
+  --font: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  --space-1:.25rem; --space-2:.5rem; --space-3:.75rem; --space-4:1rem;
+  --space-5:1.25rem; --space-6:1.5rem; --space-8:2rem; --space-10:2.5rem;
+  --space-12:3rem; --space-16:4rem; --space-20:5rem; --space-24:6rem;
+  --micro:.6875rem; --label:.75rem; --small:.875rem; --body:1rem;
+  --lead:1.125rem; --display:clamp(2.5rem,5.2vw,4.75rem);
+  --heading:clamp(2.25rem,3.8vw,3.25rem); --subheading:1.75rem;
+  --object-title:clamp(1.875rem,2.4vw,2.5rem);
+  --content:74rem; --reading:47rem; --gutter:1.5rem;
+  --header-height:3rem; --touch:2.75rem; --radius:.875rem; --pill:100rem;
+  --fast:160ms; --slow:450ms; --ease:cubic-bezier(.2,.7,.2,1);
+  --shadow:0 1.25rem 3rem -.75rem #00000030;
+  --shadow-dark:0 1.5rem 4rem #00000045;
+  --hero-height:35rem; --hero-art-height:15rem;
+  --slot-height:25rem; --hero-art-mask:linear-gradient(transparent,#000 16%,#000 88%,transparent);
+}
