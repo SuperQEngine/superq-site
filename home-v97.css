@@ -7,7 +7,7 @@
 .home-page .opening-copy .button{background:var(--ink);color:var(--white);border-color:var(--ink)}
 .home-page .opening-copy .button:hover{background:var(--line-dark)}
 .home-page .opening-copy :focus-visible{outline-color:var(--focus-light)}
-.home-page .opening-art{position:absolute;inset:auto auto calc(var(--space-16) * -1) 50%;transform:translateX(-50%);width:min(80vw,70rem);max-width:none;height:auto;object-fit:contain;z-index:0;mix-blend-mode:multiply;mask-image:none}
+.home-page .opening-art{position:absolute;inset:auto auto calc(var(--space-12) * -1) 50%;transform:translateX(-50%);width:min(72vw,63rem);max-width:none;height:auto;object-fit:contain;z-index:0;mix-blend-mode:multiply;mask-image:none}
 .home-page .coach-feature{border-block:1px solid var(--line-dark)}
 .home-page #coach,.home-page #coach .slot-inner{min-height:var(--home-coach)}
 .home-page #coach .slot-inner{display:flex;flex-direction:row;align-items:center;padding:var(--space-16) var(--gutter);width:calc(100% - var(--gutter)*2);max-width:var(--content);margin:auto}
@@ -38,7 +38,7 @@
 .home-page{--home-hero:34rem;--home-coach:36rem;--home-tile:29rem;--home-art:14rem;--home-title:clamp(2rem,7.8vw,3rem)}
 .home-page .opening-v31{padding-block:var(--space-12)}
 .home-page .opening-copy>p{font-size:var(--body);max-width:24ch;margin-inline:auto}
-.home-page .opening-art{width:108vw;inset-block-end:calc(var(--space-8) * -1)}
+.home-page .opening-art{width:97.2vw;inset-block-end:-1.625rem}
 .home-page #coach .slot-inner{display:flex;flex-direction:column;align-items:stretch;width:100%;padding:var(--space-12) var(--gutter) 0}
 .home-page #coach .slot-copy{width:100%;max-width:32rem}
 .home-page #coach h2{font-size:clamp(2.25rem,7.8vw,3rem)}
