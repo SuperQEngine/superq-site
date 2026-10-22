@@ -5,3 +5,5 @@
    q-mask.png (q.png at full opacity) is a stencil so the mark takes the brand purple and stays sharp. */
 .home-page .hero-mark{display:block;width:45px;height:48px;margin:0 auto var(--space-5);background:var(--plum-light);-webkit-mask:url(q-mask.png) center/contain no-repeat;mask:url(q-mask.png) center/contain no-repeat}
 .home-page .opening-copy>p{max-width:44ch;margin-inline:auto}
+/* Contact: team context is always shown under a plain title, not tucked in a disclosure. */
+.contact-form .team-details-title{font-size:var(--body);font-weight:600;color:var(--white);margin-block-end:var(--space-3)}
